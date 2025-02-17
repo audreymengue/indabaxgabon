@@ -1,3 +1,7 @@
+footer {
+    background-color: blueviolet;
+}
+
 .footer-div {
     display: flex;
     justify-content: space-evenly;
