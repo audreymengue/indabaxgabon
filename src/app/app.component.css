@@ -2,3 +2,8 @@ body{
     height: 100vh;
     color: green;
 }
+
+.section {
+    scroll-margin-top: 80px; /* Offset for fixed navbar */
+  }
+  
