@@ -82,3 +82,9 @@ body{
   .color-box {
     color: #2973B2;
   }
+  .fixed-img {
+    width: 100%;         /* Makes sure the image takes the full width of the card */
+    height: 200px;       /* Sets a fixed height for consistency */
+    object-fit: cover;   /* Ensures images fill the area without distortion */
+  }
+  
