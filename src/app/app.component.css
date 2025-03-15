@@ -74,3 +74,11 @@ body{
   .countdown-label {
     font-size: 0.5rem;
   }
+
+  .border {
+    border: 0.2rem solid #2973B2 ;
+  }
+
+  .color-box {
+    color: #2973B2;
+  }
