@@ -36,4 +36,7 @@ export class ScheduleComponent {
       ]
     }
   ];
+  setActiveDay(index: number) {
+    this.activeDay = index;
+  }
 }

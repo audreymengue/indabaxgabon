@@ -16,3 +16,19 @@
     background-color: #f8f9fa;
   }
   
+  .nav-tabs .nav-link {
+    cursor: pointer;
+    color: white !important; /* Makes text white when not active */
+    border: none;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    background-color: #5a6268; /* Slightly darker on hover */
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: white; /* Blue when active */
+    color: #5a6268 !important;
+    font-weight: bold;
+  }
+  
