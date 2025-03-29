@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
+import { Component, AfterViewInit, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +15,18 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 })
 export class AppComponent {
   title = 'indabaxgabon';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngAfterViewInit() {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
 }
